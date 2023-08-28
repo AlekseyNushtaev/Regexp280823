@@ -25,7 +25,7 @@ def dict_to_list(cont_dict):
     return res
 
 if __name__ == '__main__':
-    with open("phonebook_raw.csv", encoding='utf-8', errors='ignore') as f:
+    with open("phonebook_raw.csv", encoding='utf-8') as f:
         rows = csv.reader(f, delimiter=",")
         contacts_list = list(rows)
 
